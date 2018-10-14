@@ -5,7 +5,7 @@ import numpy
 
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-s.bind(("192.168.1.124", 9901))
+s.bind(("192.168.1.87", 9901))
 
 def reveice_play(s,sc):
 	data,addr = s.recvfrom(64000)

@@ -27,7 +27,7 @@ for frame in camera.capture_continuous(rawCapture,format='bgr',use_video_port=Tr
     
     cv2.imshow('frame',image)
 
-    s_v.sendto(imgencode, ("192.168.1.124", 9901))
+    s_v.sendto(imgencode, ("192.168.1.87", 9901))
 
     
     
