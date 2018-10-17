@@ -24,9 +24,13 @@ for frame in camera.capture_continuous(rawCapture,format='bgr',use_video_port=Tr
     image = frame.array
 
     result, imgencode = cv2.imencode('.jpg',image) 
+    
+    cv2.imshow('frame',image)
 
     s_v.sendto(imgencode, ("192.168.1.87", 9901))
- 
+
+    
+    
     rawCapture.truncate(0)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
