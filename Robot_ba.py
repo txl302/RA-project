@@ -11,8 +11,8 @@ camera = picamera.PiCamera()
 
 #rawCapture = picamera.array.PiRGBArray(camera,size=(1024,768))
 
-camera.resolution = (320,240)
-rawCapture = picamera.array.PiRGBArray(camera,size=(320,240))
+camera.resolution = (640,480)
+rawCapture = picamera.array.PiRGBArray(camera,size=(640,480))
 
 s_v = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
