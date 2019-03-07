@@ -11,6 +11,7 @@ def reveice_save(s,sc):
 	data,addr = s.recvfrom(64000)
 	data = numpy.fromstring(data, dtype = 'uint8')
 	image = cv2.imdecode(data, 1)
+	print("haha")
 	image = cv2.resize(image, (640,480))
 	cv2.imshow(sc, image)
 	cv2.imwrite('image_s.jpg', image)
