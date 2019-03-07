@@ -5,7 +5,7 @@ import numpy
 
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-s.bind(("35.185.4.47", 9901))
+s.bind(("", 9901))
 
 def reveice_save(s,sc):
 	data,addr = s.recvfrom(64000)
